@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+    <h1>Orders</h1>
+    <ul id="Orders">
+        {% for order in orders %}
+        <li>
+            <a href="http://localhost:4999/orders/{{loop.index0}}"><p>{{ order.name }} - {{ order.order_date }} - {{ order.quantity}} - {{ order.description }}</p></a>
+        </li>
+        {% endfor %}
+    </ul>
+<body>
+    
+</body>
+</html>
